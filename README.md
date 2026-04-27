@@ -1,4 +1,5 @@
-#  AI Resume Analyzer (FastAPI + JWT + RAG)
+
+#  AI Resume Analyzer (FastAPI + JWT + RAG)  <img width="32" height="32" alt="favicon" src="https://github.com/user-attachments/assets/46d81bc1-b9ed-41c3-8dd0-4bf72777faed" />
 
 An end-to-end AI-powered Resume Analyzer that evaluates how well a candidate's resume matches a job description using ATS-style scoring, semantic similarity, and skill gap analysis.
 
