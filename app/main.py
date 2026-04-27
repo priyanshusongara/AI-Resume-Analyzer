@@ -52,3 +52,12 @@ def favicon():
         return FileResponse(file_path)
 
     return {"error": "favicon not found"}
+
+@app.get("/dashboard")
+def serve_dashboard():
+    return FileResponse(os.path.join(FRONTEND_DIR, "dashboard.html"))
+
+
+@app.get("/result")
+def serve_result():
+    return FileResponse(os.path.join(FRONTEND_DIR, "result.html"))
