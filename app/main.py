@@ -1,15 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+import os
 
 from app.routes import router
 
 app = FastAPI(title="AI Resume Analyzer API")
 
-# -------------------------
+# -----------------------
 # CORS
-# -------------------------
+# -----------------------
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -18,27 +19,26 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# -------------------------
+# -----------------------
+# PATH SETUP (IMPORTANT)
+# -----------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+FRONTEND_DIR = os.path.join(BASE_DIR, "../frontend")
+
+# -----------------------
+# STATIC FILES
+# -----------------------
+app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+
+# -----------------------
 # ROUTES
-# -------------------------
+# -----------------------
 app.include_router(router)
 
-# -------------------------
-# SERVE FRONTEND
-# -------------------------
-app.mount("/static", StaticFiles(directory="frontend"), name="static")
-
-
+# -----------------------
+# ROOT → SERVE UI
+# -----------------------
 @app.get("/")
-def serve_home():
-    return FileResponse("frontend/index.html")
-
-
-@app.get("/dashboard")
-def serve_dashboard():
-    return FileResponse("frontend/dashboard.html")
-
-
-@app.get("/result")
-def serve_result():
-    return FileResponse("frontend/result.html")
+def serve_index():
+    return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
