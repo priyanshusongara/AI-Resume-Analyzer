@@ -7,6 +7,8 @@ import os
 if not os.path.exists("./data.db"):
     open("./data.db", "w").close()
 
+os.makedirs("/tmp", exist_ok=True)
+#DATABASE_URL = "sqlite:///./tmp/data.db"
 DATABASE_URL = "sqlite:///./data.db"
 
 engine = create_engine(

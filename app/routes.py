@@ -11,7 +11,7 @@ from app.auth import hash_password, verify_password, create_access_token, get_cu
 from app.pdf_parser import extract_text_from_pdf, extract_skills
 import os
 
-if os.getenv("ENV", "production") == "production":
+if os.getenv("ENV") == "production":
     from app.rag.rag_light import compute_similarity, store_skills
 else:
     from app.rag.rag_ai import compute_similarity, store_skills
