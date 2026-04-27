@@ -88,15 +88,17 @@ These endpoints require a valid JWT token after login.
 # Author
 Priyanshu Songara
 
+---
 
 # Screenshots of the API:
 
 
 
-
-<img width="1920" height="1080" alt="Screenshot (3657)" src="https://github.com/user-attachments/assets/b531c08c-3583-4516-889e-0d2a14f66e1f" />
-<img width="1920" height="1080" alt="Screenshot (3656)" src="https://github.com/user-attachments/assets/fdbf897b-cef1-4d2b-b0ec-a8fd57bc69a6" />
 <img width="1920" height="1080" alt="Screenshot (3655)" src="https://github.com/user-attachments/assets/1fdd9cf4-f5a8-4ece-803a-644fd5de1621" />
 <img width="1920" height="1080" alt="Screenshot (3654)" src="https://github.com/user-attachments/assets/336fded4-cce2-4991-a4fe-6f1bb05c2b64" />
+
+<img width="1920" height="1080" alt="Screenshot (3656)" src="https://github.com/user-attachments/assets/fdbf897b-cef1-4d2b-b0ec-a8fd57bc69a6" />
+<img width="1920" height="1080" alt="Screenshot (3658)" src="https://github.com/user-attachments/assets/9dc2a75b-1de3-4281-af6e-4ffecb097dce" />
+
 
 
