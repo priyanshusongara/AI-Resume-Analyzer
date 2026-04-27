@@ -3,7 +3,11 @@ import chromadb
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-client = chromadb.Client()
+client = chromadb.Client(
+    settings=chromadb.config.Settings(
+        persist_directory="./chroma_db"
+    )
+)
 collection = client.get_or_create_collection(name="skills")
 
 

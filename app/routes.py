@@ -9,10 +9,12 @@ from app.models import Base, User
 from app.schemas import UserCreate, UserLogin
 from app.auth import hash_password, verify_password, create_access_token, get_current_user
 from app.pdf_parser import extract_text_from_pdf, extract_skills
-from app.rag_engine import compute_similarity
+import os
 
-from app.rag_engine import store_skills
-
+if os.getenv("ENV") == "production":
+    from app.rag.rag_light import compute_similarity, store_skills
+else:
+    from app.rag.rag_ai import compute_similarity, store_skills
 
 Base.metadata.create_all(bind=engine)
 
