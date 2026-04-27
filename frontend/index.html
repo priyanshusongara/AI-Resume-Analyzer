@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Analyzer | Login</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/assets/favicon.png">
+</head>
+<body>
+  <div class="container small-container">
+    <div class="header">
+      <h1>
+  <span class="title-dark">AI Resume</span>
+  <span class="title-green">Analyzer</span>
+</h1>
+      <p>Secure Login & Signup Portal</p>
+      
+    </div>
+
+    <div class="card">
+      <h2>Authentication</h2>
+
+      <input type="text" id="username" placeholder="Enter Username">
+      <input type="email" id="email" placeholder="Enter Email">
+      <input type="password" id="password" placeholder="Enter Password">
+
+      <button onclick="signupUser()">Sign Up</button>
+      <button class="secondary-btn" onclick="loginUser()">Login</button>
+
+      <div id="authResult" class="result-box" style="display:none;"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <p><strong>AI Resume Analyzer</strong> — Smart ATS-based resume evaluation system using FastAPI + JWT + AI matching.</p>
+
+    <p>
+      Built for developers to optimize resumes against job descriptions with real-time scoring.
+    </p>
+
+    <p class="author">
+      Developed by <span>Priyanshu Songara</span>
+    </p>
+  </div>
+</footer>
+
+  
+
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | AI Resume Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/assets/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>
+  <span class="title-dark">AI Resume</span>
+  <span class="title-green">Analyzer</span>
+</h1>
+      <p>Upload Resume + Analyze Job Match</p>
+      
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Upload Resume PDF</h2>
+        <input type="file" id="resumeFile" accept=".pdf">
+        <button onclick="uploadResume()">Upload Resume</button>
+        <div id="resumeResult" class="result-box" style="display:none;"></div>
+      </div>
+
+      <div class="card">
+        <h2>Job Description Analysis</h2>
+        <textarea id="jobDescription" placeholder="Paste complete job description here..."></textarea>
+        <button class="secondary-btn" onclick="analyzeJob()">Analyze Job Match</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="footer">
+  <div class="footer-content">
+    <p><strong>AI Resume Analyzer</strong> — Smart ATS-based resume evaluation system using FastAPI + JWT + AI matching.</p>
+
+    <p>
+      Built for developers to optimize resumes against job descriptions with real-time scoring.
+    </p>
+
+    <p class="author">
+      Developed by <span>Priyanshu Songara</span>
+    </p>
+  </div>
+</footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

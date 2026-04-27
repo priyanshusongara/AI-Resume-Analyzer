@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results | AI Resume Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/assets/favicon.png">
+</head>
+<body>
+  <div class="container small-container">
+    <div class="header">
+      <h1>
+  <span class="title-dark">Analysis</span>
+  <span class="title-green">Result</span>
+</h1>
+      <p>ATS Score + Missing Skills + Suggestions</p>
+      
+    </div>
+
+    <div class="card">
+      <div id="finalResult" class="result-box"></div>
+      <button onclick="window.location.href='/static/dashboard.html'">
+  Back to Dashboard
+</button>
+    </div>
+  </div>
+<footer class="footer">
+  <div class="footer-content">
+    <p><strong>AI Resume Analyzer</strong> — Smart ATS-based resume evaluation system using FastAPI + JWT + AI matching.</p>
+
+    <p>
+      Built for developers to optimize resumes against job descriptions with real-time scoring.
+    </p>
+
+    <p class="author">
+      Developed by <span>Priyanshu Songara</span>
+    </p>
+  </div>
+</footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
