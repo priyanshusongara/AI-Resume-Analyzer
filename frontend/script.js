@@ -20,9 +20,13 @@ async function signupUser() {
     });
 
     const data = await response.json();
-
+    if (!response.ok) {
+      resultBox.style.display = "block";
+      resultBox.innerHTML = data.detail || "Signup failed";
+      return;}
+      
     resultBox.style.display = "block";
-    resultBox.innerHTML = data.message || "Signup completed";
+    resultBox.innerHTML = data.message;
 
   } catch (error) {
     resultBox.style.display = "block";

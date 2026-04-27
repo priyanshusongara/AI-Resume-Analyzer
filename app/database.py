@@ -2,7 +2,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "sqlite:///./resume_analyzer.db"
+
+import os
+if not os.path.exists("./data.db"):
+    open("./data.db", "w").close()
+
+DATABASE_URL = "sqlite:///./data.db"
 
 engine = create_engine(
     DATABASE_URL,
