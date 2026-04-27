@@ -1,5 +1,5 @@
 
-#  AI Resume Analyzer (FastAPI + JWT + RAG)  <img width="32" height="32" alt="favicon" src="https://github.com/user-attachments/assets/46d81bc1-b9ed-41c3-8dd0-4bf72777faed" />
+#  AI Resume Analyzer (FastAPI + JWT + RAG)  <img width="100" height="100" alt="favicon" src="https://github.com/user-attachments/assets/46d81bc1-b9ed-41c3-8dd0-4bf72777faed" />
 
 An end-to-end AI-powered Resume Analyzer that evaluates how well a candidate's resume matches a job description using ATS-style scoring, semantic similarity, and skill gap analysis.
 
@@ -93,13 +93,12 @@ Priyanshu Songara
 
 # Screenshots of the API:
 
-
-
+Login/Signup Page
 <img width="1920" height="1080" alt="Screenshot (3655)" src="https://github.com/user-attachments/assets/1fdd9cf4-f5a8-4ece-803a-644fd5de1621" />
-<img width="1920" height="1080" alt="Screenshot (3654)" src="https://github.com/user-attachments/assets/336fded4-cce2-4991-a4fe-6f1bb05c2b64" />
-
+Upload Resume file & Type JD page:
+<img width="1920" height="1080" alt="Screenshot (3659)" src="https://github.com/user-attachments/assets/3d1a8880-236d-48bd-b56e-ba97f04be111" />
+Result pages :
 <img width="1920" height="1080" alt="Screenshot (3656)" src="https://github.com/user-attachments/assets/fdbf897b-cef1-4d2b-b0ec-a8fd57bc69a6" />
 <img width="1920" height="1080" alt="Screenshot (3658)" src="https://github.com/user-attachments/assets/9dc2a75b-1de3-4281-af6e-4ffecb097dce" />
-
 
 
