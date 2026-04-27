@@ -42,3 +42,13 @@ app.include_router(router)
 @app.get("/")
 def serve_index():
     return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
+
+
+@app.get("/favicon.ico")
+def favicon():
+    file_path = os.path.join(FRONTEND_DIR, "assets", "favicon.png")
+
+    if os.path.exists(file_path):
+        return FileResponse(file_path)
+
+    return {"error": "favicon not found"}
